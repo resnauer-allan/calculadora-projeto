@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Juros Compostos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Juros Compostos</h1>
+
+        <form id="form-calculo">
+            <div class="input-group">
+                <label for="capital">Capital Inicial (R$)</label>
+                <input type="number" id="capital" placeholder="Ex: 1000" required>
+            </div>
+
+            <div class="input-group">
+                <label for="taxa">Taxa de Juros Mensal (%)</label>
+                <input type="number" id="taxa" step="0.01" placeholder="Ex: 1.5" required>
+            </div>
+
+            <div class="input-group">
+                <label for="tempo">Tempo (meses)</label>
+                <input type="number" id="tempo" placeholder="Ex: 12" required>
+            </div>
+
+            <div class="input-group">
+                <label for="aporte">Aporte Mensal (R$)</label>
+                <input type="number" id="aporte" placeholder="Ex: 200">
+            </div>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div class="resultado" id="resultado">
+            <h2>Resultado</h2>
+            <p><strong>Montante Final:</strong> <span id="montante">R$ 0,00</span></p>
+            <p><strong>Total Investido:</strong> <span id="investido">R$ 0,00</span></p>
+            <p><strong>Total em Juros:</strong> <span id="juros">R$ 0,00</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
